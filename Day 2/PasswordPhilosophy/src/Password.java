@@ -46,7 +46,7 @@ public class Password {
         first = new String(new char[]{thePassword.charAt(min-1)});
         second = new String(new char[]{thePassword.charAt(max-1)});
 
-        //
+        //XOR comparison in essence (could be coded with the ^ operand), here we check that the character is only at pos1 or pos2, but not on both:
         if(character.equals(first) && character.equals(second)){
             return false;
         }
