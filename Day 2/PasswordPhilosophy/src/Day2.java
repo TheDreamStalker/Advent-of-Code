@@ -14,7 +14,7 @@ public class Day2 {
             String line;
             while((line = br.readLine()) != null){
                 //Validate each line:
-                if(new Password(line).checkPassword()){
+                if(new Password(line).realCheckPassword()){
                     validPasswords++;
                 }
                 contents.add(line);
